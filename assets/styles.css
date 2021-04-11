@@ -5,14 +5,14 @@
 }
 
 body{
-    width: 100vw;
+    width: 98vw;
     background-color: #0C1027;
 }
 
 header{
-    width: 100vw;
-    height: 12vh;
-    padding: 1rem 2rem 1rem 2rem;
+    background-color: #0C1027;
+    width: 100%;
+    padding: 1rem 2rem 0px 2rem;
     box-sizing: border-box;
     box-shadow: 0px 6px 6px 2px #0C1027;
     position: sticky;
@@ -139,7 +139,7 @@ header nav i{
 }
 
 #search #inp{
-    width: 4vw;
+    width: 23vw;
     display: inline-block;
     
     font-size: 12px;
@@ -149,25 +149,134 @@ header nav i{
     background-color: #12193E;
     border: none;
     font-size: 20px;
+    width: 100%;
+    border-style: none;
 }
 
 #search #mic{
     display: inline-block;
-    position: relative;
-    left: 260px;
+}
+
+#bell{
+    display: inline-block;
+    font-size: 25px;
+    padding: 8px;
+    margin: 10px;
+    margin-top: 0px;
+    vertical-align: top;
 }
 
 main{
-    margin: 70px auto;
+    margin: 50px auto;
     width: 85vw;
 }
 
 #left{
-    width: 53vw;
+    width: 52vw;
     display: inline-block;
 }
 
 #right{
     width: 28vw;
     display: inline-block;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+#top #div1{
+    width: 33%;
+    height: 23vh;
+    background-image: url("./media/crousel/carousel1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#top #div1:hover{
+    transform: scale(1.3);
+    transition: .3s linear;
+}
+
+#top #div2{
+    width: 33%;
+    height: 23vh;
+    background-image: url("./media/crousel/carousel2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#top #div2:hover{
+    transform: scale(1.3);
+    transition: .3s linear;
+}
+
+#top #div3{
+    width: 33%;
+    height: 23vh;
+    background-image: url("./media/crousel/carousel3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#top #div3:hover{
+    transform: scale(1.3);
+    transition: .3s linear;
+}
+
+#latest{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+    width: 100%;
+}
+
+#latest-div1{
+    width: 50%;
+    height: 20vh;
+    background-color: red;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+#latest-div2{
+    width: 50%;
+    height: 20vh;
+    background-color: blue;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+#latest-div3{
+    width: 50%;
+    height: 20vh;
+    background-color: pink;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+#latest-div4{
+    width: 50%;
+    height: 20vh;
+    background-color: gray;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.image{
+    background-image: url("./media/songs/DaBaby.jpg");
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    width: 8vw;
+    height: 100%;
 }
