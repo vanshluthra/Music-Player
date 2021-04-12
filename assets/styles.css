@@ -4,6 +4,10 @@
     color: white;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     width: 98vw;
     background-color: #0C1027;
@@ -25,78 +29,33 @@ header nav{
     width: auto;
 }
 
-@-webkit-keyframes heartbeat{
-    from{
-        -webkit-transform:scale(1);
-        transform:scale(1);
-        -webkit-transform-origin:center center;
-        transform-origin:center center;
-        -webkit-animation-timing-function:ease-out;
-        animation-timing-function:ease-out
+@keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
     }
-    10%{
-        -webkit-transform:scale(.91);
-        transform:scale(.91);
-        -webkit-animation-timing-function:ease-in;
-        animation-timing-function:ease-in
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
     }
-    17%{
-        -webkit-transform:scale(.98);
-        transform:scale(.98);
-        -webkit-animation-timing-function:ease-out;
-        animation-timing-function:ease-out
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
     }
-    33%{
-        -webkit-transform:scale(.87);
-        transform:scale(.87);
-        -webkit-animation-timing-function:ease-in;
-        animation-timing-function:ease-in
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
     }
-    45%{
-        -webkit-transform:scale(1);
-        transform:scale(1);
-        -webkit-animation-timing-function:ease-out;
-        animation-timing-function:ease-out
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
     }
 }
-@keyframes heartbeat{
-    from{
-        -webkit-transform:scale(1);
-        transform:scale(1);
-        -webkit-transform-origin:center center;
-        transform-origin:center center;
-        -webkit-animation-timing-function:ease-out;
-        animation-timing-function:ease-out
-    }
-    10%{
-        -webkit-transform:scale(.91);
-        transform:scale(.91);
-        -webkit-animation-timing-function:ease-in;
-        animation-timing-function:ease-in
-    }
-    17%{
-        -webkit-transform:scale(.98);
-        transform:scale(.98);
-        -webkit-animation-timing-function:ease-out;
-        animation-timing-function:ease-out
-    }
-    33%{
-        -webkit-transform:scale(.87);
-        transform:scale(.87);
-        -webkit-animation-timing-function:ease-in;
-        animation-timing-function:ease-in
-    }
-    45%{
-        -webkit-transform:scale(1);
-        transform:scale(1);
-        -webkit-animation-timing-function:ease-out;
-        animation-timing-function:ease-out
-    }
-}
+  
 
-.heartbeat{
-    -webkit-animation:heartbeat 1.5s ease-in-out infinite both;
-    animation:heartbeat 1.5s ease-in-out infinite both
+.heartbeat {
+	animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 header nav i{
@@ -118,14 +77,20 @@ header nav i{
 }
 
 #fav p{
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-left: 10rem;
+    padding-top: 8px;
+}
+
+#fav p a:hover{
+    text-decoration: underline;
+    color: lightgray;
 }
 
 #search{
     background-color: #12193E;
     width: 30vw;
-    margin-left: 20rem;
+    margin-left: 19rem;
     display: inline-block;
     border-radius: 5px;
     vertical-align: top;
@@ -157,13 +122,57 @@ header nav i{
     display: inline-block;
 }
 
+@keyframes shake-bottom {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+    }
+    10% {
+      transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+    80% {
+      transform: rotate(-2deg);
+    }
+    90% {
+      transform: rotate(2deg);
+    }
+}
+ 
+.shake-bottom {
+	animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
 #bell{
     display: inline-block;
-    font-size: 25px;
-    padding: 8px;
+    font-size: 22px;
+    padding: 6px;
+    padding-top: 8px;
     margin: 10px;
     margin-top: 0px;
     vertical-align: top;
+}
+
+#profile{
+    background-image: url("./media/profile_picture.png");
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6px;
 }
 
 main{
@@ -172,7 +181,7 @@ main{
 }
 
 #left{
-    width: 52vw;
+    width: 56vw;
     display: inline-block;
 }
 
@@ -185,6 +194,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 #top{
@@ -238,45 +248,377 @@ main{
     flex-wrap: wrap;
     margin: 5px 0px;
     width: 100%;
+    margin-bottom: 55px;
 }
 
 #latest-div1{
     width: 50%;
     height: 20vh;
-    background-color: red;
     padding: .5rem;
     box-sizing: border-box;
+    display: flex;
+}
+
+#l1{
+    background-image: url("./media/songs/DaBaby.jpg");
+}
+
+#l2{
+    background-image: url("./media/songs/havana.jpg");
+}
+
+#l3{
+    background-image: url("./media/songs/willow.jpeg");
+}
+
+#l4{
+    background-image: url("./media/songs/Weeknd.jpg");
 }
 
 #latest-div2{
     width: 50%;
     height: 20vh;
-    background-color: blue;
     padding: .5rem;
     box-sizing: border-box;
+    display: flex;
 }
 
 #latest-div3{
     width: 50%;
     height: 20vh;
-    background-color: pink;
     padding: .5rem;
     box-sizing: border-box;
+    display: flex;
 }
 
 #latest-div4{
     width: 50%;
     height: 20vh;
-    background-color: gray;
     padding: .5rem;
     box-sizing: border-box;
+    display: flex;
 }
 
 .image{
-    background-image: url("./media/songs/DaBaby.jpg");
     background-position: center;
     background-size: cover;
     display: inline-block;
-    width: 8vw;
+    width: 30%;
     height: 100%;
+}
+
+.image i{
+    font-size: 2.5rem;
+    padding-top: 1.9rem;
+    padding-left: 2.6rem;
+    visibility: hidden;
+}
+
+.image:hover{
+    opacity: 0.7;
+}
+
+.image:hover i{
+    visibility: visible;
+}
+
+.info{
+    width: 69%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+}
+
+.name{
+    width: 65%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.duration{
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+}
+
+.box2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2 a i{
+    font-size: 18px;
+    margin-left: 6px;
+}
+
+.popular{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.popular-singer{
+    margin: 13px 5px;
+    height: 20vh;
+    display: inline-block;
+    width: 9.4vw;
+}
+
+.popular-singer h4{
+    text-align: center;
+}
+
+.pop{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.pop i{
+    font-size: 2.5rem;
+    padding-top: 2.4rem;
+    padding-left: 3.2rem;
+    visibility: hidden;
+}
+
+.pop:hover{
+    opacity: 0.7;
+}
+
+.pop:hover i{
+    visibility: visible;
+}
+
+#s1{
+    background-image: url("./media/popular-artists/adele.jpg");
+}
+
+#s2{
+    background-image: url("./media/popular-artists/billie.jpg");
+}
+
+#s3{
+    background-image: url("./media/popular-artists/bruno.jpg");
+}
+
+#s4{
+    background-image: url("./media/popular-artists/Camila.jpg");
+}
+
+#s5{
+    background-image: url("./media/popular-artists/drake.jpg");
+}
+
+#s6{
+    background-image: url("./media/popular-artists/ed-sheeran.jpg");
+}
+
+#s7{
+    background-image: url("./media/popular-artists/eminem.jpg");
+}
+
+#s8{
+    background-image: url("./media/popular-artists/Katy-perry.jpg");
+}
+
+#s9{
+    background-image: url("./media/popular-artists/nicki-minaj.jpg");
+}
+
+#s10{
+    background-image: url("./media/popular-artists/sixnine.jpg");
+}
+
+#station{
+    margin: 50px 0px;
+    width: 100%;
+    height: 25vh;
+    background-color: #101642;
+    padding: 1.5rem;
+    /* padding-left: 3rem; */
+    box-sizing: border-box;
+}
+
+.stat{
+    width: 14%;
+    margin: 0px 6px;
+    box-sizing: border-box;
+    height: 95%;
+    border-radius: 50%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    vertical-align: top;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#station1{
+    background-image: url("./media/music-themes/chill.jpg");
+}
+
+#station2{
+    background-image: url("./media/music-themes/pop.jpg");
+}
+
+#station3{
+    background-image: url("./media/music-themes/love.jpg");
+}
+
+#station4{
+    background-image: url("./media/music-themes/retro.jpg");
+}
+
+#station5{
+    background-image: url("./media/music-themes/rock.jpg");
+}
+
+#station6{
+    background-image: url("./media/music-themes/workout.jpg");
+}
+
+.stat h2{
+    position: relative;
+    top: 44%;
+}
+
+#type{
+    width: 100%;
+    height: 27vh;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.type-pic-box{
+    width: 31.5%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.type-pic{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.type-pic:hover{
+    transform: scale(1.4);
+}
+
+#type1{
+    background-image: url("./media/music-themes-2/electronic.jpg");
+}
+
+#type2{
+    background-image: url("./media/music-themes-2/party.jpg");
+}
+
+#type3{
+    background-image: url("./media/music-themes-2/road.jpg");
+}
+
+.type-pic h2{
+    position: relative;
+    top: 45%;
+    text-align: center;
+}
+
+.latest-english{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.english{
+    width: 100%;
+    height: 30vh;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.song{
+    height: 100%;
+    display: inline-block;
+    width: 14%;
+}
+
+.cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eng-img{
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+}
+
+#eng1{
+    background-image: url("./media/latest-english/I\'ll-Wait.jpg");
+}
+
+#eng2{
+    background-image: url("./media/latest-english/ily.jpg");
+}
+
+#eng3{
+    background-image: url("./media/latest-english/let-me-go.jpg");
+}
+
+#eng4{
+    background-image: url("./media/latest-english/qurantine-clean.jpg");
+}
+
+#eng5{
+    background-image: url("./media/latest-english/roar.jpg");
+}
+
+#eng6{
+    background-image: url("./media/latest-english/toosie-slide.jpg");
+}
+
+.latest-hindi{
+    width: 100%;
+}
+
+#hin1{
+    background-image: url("./media/latest-hindi/baarish.jpeg");
+}
+
+#hin2{
+    background-image: url("./media/latest-hindi/galiyaan.jpg");
+}
+
+#hin3{
+    background-image: url("./media/latest-hindi/giveme-some-sunshine.jpg");
+}
+
+#hin4{
+    background-image: url("./media/latest-hindi/kaun-tujhe.jpg");
+}
+
+#hin5{
+    background-image: url("./media/latest-hindi/tera-ban-jaunga.jpg");
+}
+
+#hin6{
+    background-image: url("./media/latest-hindi/tere-sang-yara.jpg");
 }
