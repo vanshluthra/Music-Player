@@ -1,0 +1,330 @@
+*, body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 98vw;
+    background-color: #0C1027;
+}
+
+#main-head{
+    background-color: #0C1027;
+    width: 100%;
+    padding: 1rem 2rem 0px 2rem;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 6px 2px #0C1027;
+    position: sticky;
+    top: 0px;
+    z-index: 100; 
+    display: flex;
+    justify-content: space-between;   
+}
+
+/* #main-head div{
+    display: inline-block;
+} */
+
+@keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+}
+  
+
+.heartbeat {
+	animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+#name-icon{
+    display: inline-block;
+}
+
+#name-icon i{
+    font-size: 3rem;
+    width: auto;
+    display: inline-block;
+}
+
+#icon-sub{
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#fav{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#fav p{
+    font-size: 1.4rem;
+    padding-top: 8px;
+}
+
+#fav p a:hover{
+    text-decoration: underline;
+    color: lightgray;
+}
+
+#search{
+    background-color: #12193E;
+    width: 30vw;
+    display: inline-block;
+    border-radius: 5px;
+    vertical-align: top;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#search i{
+    font-size: 25px;
+    padding: 8px;
+}
+
+#search #inp{
+    width: 75%;
+    display: inline-block;
+    
+    font-size: 12px;
+}
+
+#search #inp input{
+    background-color: #12193E;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    border-style: none;
+}
+
+#search #mic{
+    display: inline-block;
+}
+
+@keyframes shake-bottom {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+    }
+    10% {
+      transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+    80% {
+      transform: rotate(-2deg);
+    }
+    90% {
+      transform: rotate(2deg);
+    }
+}
+ 
+.shake-bottom {
+	animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+#notf{
+    display: inline-block;
+}
+
+#bell{
+    display: inline-block;
+    font-size: 22px;
+    padding: 6px;
+    padding-top: 8px;
+    margin: 10px;
+    margin-top: 0px;
+    vertical-align: top;
+}
+
+#profile{
+    background-image: url("./media/profile_picture.png");
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6px;
+}
+
+
+footer {
+    visibility: hidden;
+	position: sticky;
+	bottom: 0px;
+	width: 100vw;
+	height: 60px;
+	background-color: #282828;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding: 0px 3%;
+	box-sizing: border-box;
+	z-index: 6;
+}
+
+/* footer is divided into 3 parts */
+/* 1. first part of the footer */
+.active-song-description {
+	/* border:1px solid white; */
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/* the current song which is being played, this is the image container for that. */
+#song-image {
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+/* current song image */
+#song-image img {
+	width: 100%;
+	height: 100%;
+}
+/* heart and ban icon */
+.heart-and-ban-icon {
+	height: 100%;
+	padding-top: 4%;
+}
+/* song decscription */
+.song-desc {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.song-desc div:nth-child(1) {
+	font-size: 14px;
+}
+/* song author */
+.song-desc div:nth-child(2) {
+	font-size: 12px;
+}
+
+/* 2. Second part of the footer*/
+.player {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+/* this is the song-duration slider */
+#slider {
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+/* ////////// */
+.time {
+	margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+	width: 100%;
+}
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+	opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+
+/* third part of the footer */
+/* this contains the extra icons and slider for volume */
+/* this is also a container */
+.extras {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}

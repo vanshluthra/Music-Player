@@ -9,16 +9,18 @@
     <title>MUSIC PLAYER</title>
 </head>
 <body>
-    <header id="main-head">
-        <nav>
+    <nav id="main-head">
+        <div id="name-icon">
             <i class="fas fa-music heartbeat"></i>
             <div id="icon-sub">
                 <h2>Vansh's</h2>
                 <p>Music Player</p>
             </div>
-            <div id="fav">
-                <p><a href="#">Favourites</a></p>
-            </div>
+        </div>
+        <div id="fav">
+            <p><a href="#">Favourites</a></p>
+        </div>
+        <div>
             <div id="search">
                 <a href="#"><i class="fas fa-search"></i></a>
                 <div id="inp">
@@ -28,29 +30,31 @@
                     <a href="#"><i class="fas fa-microphone"></i></a>
                 </div>
             </div>
-            <a href="#"><i class="fas fa-bell shake-bottom" id="bell"></i></a>
-            <a href="#"><div id="profile"></div></a>
-        </nav>
-    </header>
+            <div id="notf">
+                <a href="#"><i class="fas fa-bell shake-bottom" id="bell"></i></a>
+                <a href="#"><div id="profile"></div></a>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <div id="left">
             <div class="content">
                 <div id="top">
-                    <div id="div1"></div>
-                    <div id="div2"></div>
-                    <div id="div3"></div>
+                    <div class="top-c" id="div1"></div>
+                    <div class="top-c" id="div2"></div>
+                    <div class="top-c" id="div3"></div>
                 </div>
 
                 <div>
                     <h2>Latest Release</h2>
                     <div id="latest">
-                        <div id="latest-div1">
+                        <div class="latest-div">
                             <div class="image" id="l1"><a href="#"><i class="fas fa-play"></i></a></div>
                             <div class="play"></div>
                             <div class="info">
                                 <div class="name">
-                                    <div class="box1">
+                                    <div class="box">
                                         <div>
                                             <br><br>
                                             <h3>Rockstar</h3>
@@ -62,7 +66,7 @@
                                     </div>
                                 </div>
                                 <div class="duration">
-                                    <div class="box2">
+                                    <div class="box">
                                         <div>
                                             <a href=""><i class="fas fa-ellipsis-h"></i></i></a>
                                         </div>
@@ -74,11 +78,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="latest-div2">
+                        <div class="latest-div">
                             <div class="image" id="l2"><a href="#"><i class="fas fa-play"></i></a></div>
                             <div class="info">
                                 <div class="name">
-                                    <div class="box1">
+                                    <div class="box">
                                         <div>
                                             <br><br>
                                             <h3>Havana</h3>
@@ -90,7 +94,7 @@
                                     </div>
                                 </div>
                                 <div class="duration">
-                                    <div class="box2">
+                                    <div class="box">
                                         <div>
                                             <a href=""><i class="fas fa-ellipsis-h"></i></i></a>
                                         </div>
@@ -102,11 +106,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="latest-div3">
+                        <div class="latest-div">
                             <div class="image" id="l3"><a href="#"><i class="fas fa-play"></i></a></div>
                             <div class="info">
                                 <div class="name">
-                                    <div class="box1">
+                                    <div class="box">
                                         <div>
                                             <br><br>
                                             <h3>Willow</h3>
@@ -118,7 +122,7 @@
                                     </div>
                                 </div>
                                 <div class="duration">
-                                    <div class="box2">
+                                    <div class="box">
                                         <div>
                                             <a href=""><i class="fas fa-ellipsis-h"></i></i></a>
                                         </div>
@@ -130,11 +134,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="latest-div4">
+                        <div class="latest-div">
                             <div class="image" id="l4"><a href="#"><i class="fas fa-play"></i></a></div>
                             <div class="info">
                                 <div class="name">
-                                    <div class="box1">
+                                    <div class="box">
                                         <div>
                                             <br><br>
                                             <h3>Blinding Lights</h3>
@@ -146,7 +150,7 @@
                                     </div>
                                 </div>
                                 <div class="duration">
-                                    <div class="box2">
+                                    <div class="box">
                                         <div>
                                             <a href=""><i class="fas fa-ellipsis-h"></i></i></a>
                                         </div>
@@ -164,7 +168,9 @@
                 <div id="popular">
                     <h2>Popular Artists</h2>
                     <div class="popular-singer">
-                        <div class="pop" id="s1"><a href="#"><i class="fas fa-play"></i></a></div>
+                        <div class="pop" id="s1">
+                            <div class="play-icon"><a href="#"><i class="fas fa-play"></i></a></div>
+                        </div>
                         <h4>Adele</h4>
                     </div>
                     <div class="popular-singer">
@@ -383,11 +389,232 @@
                 </div>
             </div>
         </div>
+
         <div id="right">
             <div class="content">
+                <div id="side-top">
+                    <h1>Queue</h1>
+                    <div>
+                        <a href=""><i class="fas fa-caret-down"></i></a>
+                    </div>
+                </div>
 
+                <div id="side-list">
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>01</p>
+                            <div class="song-img" id="song-img1"></div>
+                            <div class="song-name"> 
+                                <h3>Alone</h3>
+                                <p>Alan Walker</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>02</p>
+                            <div class="song-img" id="song-img2"></div>
+                            <div class="song-name"> 
+                                <h3>Alone Again</h3>
+                                <p>Weeknd</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>03</p>
+                            <div class="song-img" id="song-img3"></div>
+                            <div class="song-name"> 
+                                <h3>Go Flex</h3>
+                                <p>Post Malone</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>04</p>
+                            <div class="song-img" id="song-img4"></div>
+                            <div class="song-name"> 
+                                <h3>Golden</h3>
+                                <p>BTS</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>01</p>
+                            <div class="song-img" id="song-img1"></div>
+                            <div class="song-name"> 
+                                <h3>Alone</h3>
+                                <p>Alan Walker</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>02</p>
+                            <div class="song-img" id="song-img2"></div>
+                            <div class="song-name"> 
+                                <h3>Alone Again</h3>
+                                <p>Weeknd</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>03</p>
+                            <div class="song-img" id="song-img3"></div>
+                            <div class="song-name"> 
+                                <h3>Go Flex</h3>
+                                <p>Post Malone</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>04</p>
+                            <div class="song-img" id="song-img4"></div>
+                            <div class="song-name"> 
+                                <h3>Golden</h3>
+                                <p>BTS</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>01</p>
+                            <div class="song-img" id="song-img1"></div>
+                            <div class="song-name"> 
+                                <h3>Alone</h3>
+                                <p>Alan Walker</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>02</p>
+                            <div class="song-img" id="song-img2"></div>
+                            <div class="song-name"> 
+                                <h3>Alone Again</h3>
+                                <p>Weeknd</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>03</p>
+                            <div class="song-img" id="song-img3"></div>
+                            <div class="song-name"> 
+                                <h3>Go Flex</h3>
+                                <p>Post Malone</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="list-song">
+                        <div class="list-song-info">
+                            <p>04</p>
+                            <div class="song-img" id="song-img4"></div>
+                            <div class="song-name"> 
+                                <h3>Golden</h3>
+                                <p>BTS</p></div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="active-song-description">
+            <!-- song image -->
+            <div id="song-image">
+                <img src="./assets/media/latest-hindi/tera-ban-jaunga.jpg">
+            </div>
+            <!-- song name and author -->
+            <div class="song-desc">
+                <div>
+                    Imagine by John
+                </div>
+                <div>
+                    John Lenon
+                </div>
+                <!-- heart icon and ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the main player controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

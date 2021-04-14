@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles2.css">
+    <script src="https://kit.fontawesome.com/72fee1912b.js" crossorigin="anonymous"></script>
+    <title>Single Playlist</title>
+</head>
+<body>
+    <nav id="main-head">
+        <div id="name-icon">
+            <i class="fas fa-music heartbeat"></i>
+            <div id="icon-sub">
+                <h2>Vansh's</h2>
+                <p>Music Player</p>
+            </div>
+        </div>
+        <div id="fav">
+            <p><a href="#">Favourites</a></p>
+        </div>
+        <div>
+            <div id="search">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <div id="inp">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div id="mic">
+                    <a href="#"><i class="fas fa-microphone"></i></a>
+                </div>
+            </div>
+            <div id="notf">
+                <a href="#"><i class="fas fa-bell shake-bottom" id="bell"></i></a>
+                <a href="#"><div id="profile"></div></a>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <footer>
+        <div class="active-song-description">
+            <!-- song image -->
+            <div id="song-image">
+                <img src="./assets/media/latest-hindi/tera-ban-jaunga.jpg">
+            </div>
+            <!-- song name and author -->
+            <div class="song-desc">
+                <div>
+                    Imagine by John
+                </div>
+                <div>
+                    John Lenon
+                </div>
+                <!-- heart icon and ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the main player controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
