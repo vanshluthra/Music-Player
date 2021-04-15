@@ -1,3 +1,5 @@
+/* Some general CSS */
+
 *, body{
     margin: 0px;
     padding: 0px;
@@ -13,9 +15,11 @@ a{
 }
 
 body{
-    width: 98vw;
+    width: 100vw;
     background-color: #0C1027;
 }
+
+/* Main boy CSS */
 
 #main-head{
     background-color: #0C1027;
@@ -30,9 +34,7 @@ body{
     justify-content: space-between;   
 }
 
-/* #main-head div{
-    display: inline-block;
-} */
+/* Key frame for music icon on top left corner */
 
 @keyframes heartbeat {
     from {
@@ -62,6 +64,8 @@ body{
 .heartbeat {
 	animation: heartbeat 1.5s ease-in-out infinite both;
 }
+
+/* Navbar CSS */
 
 #name-icon{
     display: inline-block;
@@ -130,6 +134,8 @@ body{
     display: inline-block;
 }
 
+/* Keyframe for Notification icon */
+
 @keyframes shake-bottom {
     0%,
     100% {
@@ -187,6 +193,8 @@ body{
     margin-top: 6px;
 }
 
+/* Body CSS */
+
 main{
     margin: 50px auto;
     width: 85vw;
@@ -205,6 +213,10 @@ main{
     box-sizing: border-box;
     background-color: #0C1027;
 }
+
+/* Left side content CSS */
+
+/* Header of page */
 
 .content{
     width: 100%;
@@ -244,6 +256,8 @@ main{
 #div3{
     background-image: url("./media/crousel/carousel3.jpg");
 }
+
+/* Latest Release Section CSS */
 
 #latest{
     display: flex;
@@ -332,6 +346,8 @@ main{
     margin-left: 6px;
 }
 
+/* Popular Artist section CSS */
+
 .popular{
     display: flex;
     flex-wrap: wrap;
@@ -418,6 +434,8 @@ main{
     background-image: url("./media/popular-artists/sixnine.jpg");
 }
 
+/* Stations section CSS */
+
 #station{
     margin: 50px 0px;
     width: 100%;
@@ -474,6 +492,8 @@ main{
     top: 44%;
 }
 
+/* Media Query- Breakpoint 1 at width of 755 px */
+
 @media(max-width:755px){
     #latest{
         flex-wrap: nowrap;
@@ -497,6 +517,8 @@ main{
         text-align: center;
     }
 }
+
+/* Special Music type section css */
 
 #type{
     width: 100%;
@@ -541,6 +563,8 @@ main{
     top: 45%;
     text-align: center;
 }
+
+/* Latest English Songs section CSS */
 
 .latest-english{
     margin-bottom: 40px;
@@ -601,6 +625,8 @@ main{
     background-image: url("./media/latest-english/toosie-slide.jpg");
 }
 
+/* Latest Hindi Songs section CSS */
+
 .latest-hindi{
     width: 100%;
 }
@@ -628,6 +654,10 @@ main{
 #hin6{
     background-image: url("./media/latest-hindi/tere-sang-yara.jpg");
 }
+
+/* Right side content CSS */
+
+/* Playlist CSS */
 
 #side-top{
     width: 100%;
@@ -718,6 +748,8 @@ main{
     background-image: url("./media/playlist/beer.jpg");
 }
 
+/* Media Query- Breakpoint 2 at width 1130px */
+
 @media(max-width:1130px){
     #right{
         display: block;
@@ -735,6 +767,8 @@ main{
         font-size: 0px;
     }
 }
+
+/* Footer Section CSS */
 
 footer {
     /* visibility: hidden; */

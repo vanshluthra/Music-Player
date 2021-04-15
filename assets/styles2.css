@@ -1,3 +1,5 @@
+/* Some basic CSS */
+
 *, body{
     margin: 0px;
     padding: 0px;
@@ -13,9 +15,15 @@ a{
 }
 
 body{
-    width: 98vw;
+    width: 100vw;
     background-color: #0C1027;
 }
+
+.point{
+    cursor: pointer;
+}
+
+/* Main section CSS */
 
 #main-head{
     background-color: #0C1027;
@@ -30,9 +38,7 @@ body{
     justify-content: space-between;   
 }
 
-/* #main-head div{
-    display: inline-block;
-} */
+/* Keyframe for Music icon on top left corner */
 
 @keyframes heartbeat {
     from {
@@ -62,6 +68,8 @@ body{
 .heartbeat {
 	animation: heartbeat 1.5s ease-in-out infinite both;
 }
+
+/* Navabar CSS */
 
 #name-icon{
     display: inline-block;
@@ -130,6 +138,8 @@ body{
     display: inline-block;
 }
 
+/* Keyframe for notification icon */
+
 @keyframes shake-bottom {
     0%,
     100% {
@@ -187,9 +197,375 @@ body{
     margin-top: 6px;
 }
 
+/* Main content CSS */
+
+main{
+    margin: 50px auto;
+    width: 85vw;
+}
+
+#left{
+    width: 60vw;
+    display: inline-block;
+}
+
+#right{
+    width: 24vw;
+    display: inline-block;
+    height: 120vh;
+    vertical-align: top;
+    box-sizing: border-box;
+    background-color: #0C1027;
+}
+
+/* Left side Content CSS */
+/* Artist section CSS */
+
+#artist-info{
+    width: 100%;
+    height: 45vh;
+    background-color: #141B41;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+
+#artist-img{
+    width: 35%;
+    height: 100%;
+    background-image: url("./media/popular-artists/billie.jpg");
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 1px -25px 20px 2px #141B41 inset;
+    display: inline-block;
+}
+
+#artist-detail{
+    width: 64%;
+    height: 100%;
+    display: inline-block;
+    padding: 5vh 10px;
+    box-sizing: border-box; 
+    vertical-align: top;
+}
+
+#artist-detail p{
+    color: #4F5571;
+}
+
+#play-follow{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#play{
+    width: 20%;
+    text-align: center;
+    padding: .7rem;
+    margin-top: -8px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Playlist section CSS */
+
+#playlist{
+    width: 100%;
+    height: auto;
+}
+
+.song{
+    position:relative;
+    background-color: #35374F;
+    width: 100%;
+    height: 13vh;
+    padding: 1vh 1vw;
+    box-sizing: border-box;
+    margin-bottom: 1.2vh;
+}
+
+.song:hover{
+    background-color: #1A1E33;
+}
+
+.name{
+    position: absolute;
+    left: 1vw;
+    height: 100%;
+    vertical-align: top;
+}
+
+.icon{
+    position: absolute;
+    right: 1vw;
+    top: 30%;
+}
+
+.name p{
+    color: #93A8B3;
+    display: inline-block;
+}
+
+.img{
+    box-sizing: border-box;
+    width: 5vw;
+    height: 70%;
+    margin: 1vh 1vw;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.song-name{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon i{
+    display: inline-block;
+    margin: 1vh 2vw;
+}
+
+#img1{
+    background-image: url("./media/playlist/alone.jpg");
+}
+
+#img2{
+    background-image: url("./media/playlist/stoney.jpg");
+}
+
+#img3{
+    background-image: url("./media/playlist/after.jpg");
+}
+
+#img4{
+    background-image: url("./media/playlist/beer.jpg");
+}
+
+/* Right sice content CSS */
+/* SImilar artist section CSS */
+
+#similar-artist{
+    width: 100%;
+    height: 55vh;
+    margin-bottom: 5vh;
+    margin-left: 1vw;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#sa-top{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#sa-top p{
+    vertical-align: middle;
+    color: #93A8B3;
+    padding-top: 2.5vh;
+}
+
+#sa-list{
+    width: 100%;
+    height: 80%;
+}
+
+.sa-item{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 1.5vh;
+}
+
+.sa-img{
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+    margin-right: 1vw;
+    display: inline-block;
+}
+
+.sa-info{
+    width: 68%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.sa-name{
+    position: absolute;
+    top: 17%;
+    display: inline-block;
+}
+
+.sa-info p{
+    color: #93A8B3;
+}
+
+.sa-icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.sa-icon i{
+    color: #93A8B3;
+    padding-left: 5px;
+}
+
+#sa-img1{
+    background-image: url("./media/playlist/beer.jpg");
+}
+
+/* Recently played section CSS */
+
+#side-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4vh;
+    box-shadow: 1px 6px 6px 4px #0C1027;
+    height: 6%;
+    z-index: 3;
+}
+
+#side-top h1{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#side-top div i{
+    padding-top: 50%;
+    padding-right: 4px;
+    font-size: 1.4rem;
+    color: #44BDA6;
+}
+
+#view{
+    vertical-align: middle;
+    color: #93A8B3;
+    padding-top: 2.5vh;
+}
+
+#side-list{
+    overflow-y: auto;
+    width: 100%;
+    height: 90%;
+    padding: 0px 1rem;
+    padding-top: 10px;
+
+}
+
+.list-song{
+    width: 100%;
+    box-sizing: border-box;
+    height: 12vh;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.list-song-info{
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+}
+
+.list-song-info p{
+    color:#93A8B3;
+    display: inline-block;
+}
+
+.song-img{
+    display: inline-block;
+    height: 100%;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 0px 1rem;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.song-name{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.heart{
+    display: inline-block;
+    position: relative;
+    left: 4vw;
+    cursor:pointer;
+}
+
+#song-img1{
+    background-image: url("./media/playlist/alone.jpg");
+}
+
+#song-img2{
+    background-image: url("./media/playlist/after.jpg");
+}
+
+#song-img3{
+    background-image: url("./media/playlist/stoney.jpg");
+}
+
+#song-img4{
+    background-image: url("./media/playlist/beer.jpg");
+}
+
+/* Media Queries for making page responsive */
+
+/* BreakPoint 1 at 695px width */
+
+@media(max-width:695px){
+    #play-follow, #track{
+        visibility: hidden;
+    }
+}
+
+/* BreakPoint 2 at 1111px width */
+
+@media(max-width: 1111px){
+    #right{
+        display: block;
+        width: 100%;
+    }
+    #left{
+        width: 100%;
+    }
+    #search{
+        width: 0px;
+        box-sizing: content-box;
+        padding: 0px;
+    }
+    #search i{
+        font-size: 0px;
+    }
+}
+
+/* Footer section CSS */
 
 footer {
-    visibility: hidden;
+    /* visibility: hidden; */
 	position: sticky;
 	bottom: 0px;
 	width: 100vw;
